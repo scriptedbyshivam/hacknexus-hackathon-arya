@@ -71,6 +71,18 @@
       "medical_history": "LALJFJNNAFDSLNFALNLAD",
       "emergency_contact": "123",
       "created_at": "2026-04-09T20:16:36.521Z"
+    },
+    {
+      "id": 7,
+      "name": "ABC",
+      "age": 45,
+      "phone": "929299292",
+      "email": "ABC@ABC.COM",
+      "gender": "Male",
+      "address": "maliya nagar",
+      "medical_history": "xyz",
+      "emergency_contact": "123",
+      "created_at": "2026-04-09T21:52:54.637Z"
     }
   ],
   "triage_records": [
@@ -119,6 +131,6 @@
       "completed_at": null
     }
   ],
-  "nextPatientId": 7,
+  "nextPatientId": 8,
   "nextRecordId": 3
 }
