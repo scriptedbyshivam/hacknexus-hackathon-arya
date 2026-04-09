@@ -251,7 +251,7 @@ app.get('/api/statistics', (req, res) => {
   res.json({ success: true, statistics: { total_patients, total_records, average_triage_score: Math.round(avg_score*100)/100, status_breakdown } });
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
   console.log(`✅ Mock backend running on http://localhost:${PORT}`);
 });
