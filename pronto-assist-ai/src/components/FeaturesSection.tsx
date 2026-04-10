@@ -46,7 +46,7 @@ const features = [
 
 export default function FeaturesSection() {
   return (
-    <section className="py-24 px-4">
+    <section className="py-24 px-4 dark:bg-slate-900">
       <div className="max-w-6xl mx-auto">
         <motion.div
           className="text-center mb-16"

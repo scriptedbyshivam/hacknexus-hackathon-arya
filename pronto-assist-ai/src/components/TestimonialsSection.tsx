@@ -51,7 +51,7 @@ export default function TestimonialsSection() {
   const doubled = [...testimonials, ...testimonials];
 
   return (
-    <section className="py-24 overflow-hidden">
+    <section className="py-24 overflow-hidden dark:bg-slate-900">
       <motion.div
         className="text-center mb-12 px-4"
         initial={{ opacity: 0, y: 30 }}

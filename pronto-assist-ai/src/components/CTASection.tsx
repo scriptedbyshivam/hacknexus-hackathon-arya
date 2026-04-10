@@ -7,7 +7,7 @@ export default function CTASection() {
   const navigate = useNavigate();
 
   return (
-    <section className="py-24 px-4">
+    <section className="py-24 px-4 dark:bg-slate-900">
       <motion.div
         className="max-w-4xl mx-auto relative overflow-hidden rounded-3xl bg-hero-bg p-12 md:p-20 text-center"
         initial={{ opacity: 0, y: 40 }}

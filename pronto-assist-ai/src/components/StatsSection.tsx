@@ -47,7 +47,7 @@ function AnimatedNumber({ value, suffix }: { value: number; suffix: string }) {
 
 export default function StatsSection() {
   return (
-    <section className="py-20 px-4 border-y border-border/40">
+    <section className="py-20 px-4 border-y border-border/40 dark:bg-slate-900 dark:border-y dark:border-slate-700">
       <div className="max-w-5xl mx-auto">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-12">
           {stats.map((stat, i) => (

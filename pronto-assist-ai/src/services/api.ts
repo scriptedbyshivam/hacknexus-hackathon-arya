@@ -139,12 +139,13 @@ export const getPatientDetails = async (patientId: number) => {
 // ==========================================
 
 /**
- * Audio aur Image upload karke analyze karo
+ * Audio aur Image upload karke analyze karo + text analysis
  */
 export const analyzeAndSave = async (
   patientId: number,
   audioFile?: File,
-  imageFile?: File
+  imageFile?: File,
+  textAnalysis?: string
 ): Promise<TriageResult> => {
   try {
     const formData = new FormData();
@@ -156,6 +157,10 @@ export const analyzeAndSave = async (
 
     if (imageFile) {
       formData.append('image', imageFile);
+    }
+
+    if (textAnalysis) {
+      formData.append('text_analysis', textAnalysis);
     }
 
     const response = await fetch(`${API_BASE_URL}/analyze-and-save`, {

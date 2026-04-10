@@ -17,6 +17,7 @@ interface AnalysisState {
   patientId: number | null;
   audioFile: File | null;
   imageFile: File | null;
+  textAnalysis: string;
   loading: boolean;
   error: string | null;
   result: TriageResult | null;
@@ -28,6 +29,7 @@ export const useTriageAnalysis = () => {
     patientId: null,
     audioFile: null,
     imageFile: null,
+    textAnalysis: '',
     loading: false,
     error: null,
     result: null,
@@ -125,10 +127,10 @@ export const useTriageAnalysis = () => {
       return;
     }
 
-    if (!state.audioFile && !state.imageFile) {
+    if (!state.audioFile && !state.imageFile && !state.textAnalysis) {
       setState(prev => ({
         ...prev,
-        error: 'Please upload at least one file (audio or image)',
+        error: 'Please upload at least one file or enter text analysis',
       }));
       return;
     }
@@ -138,7 +140,8 @@ export const useTriageAnalysis = () => {
       const result = await analyzeAndSave(
         state.patientId,
         state.audioFile || undefined,
-        state.imageFile || undefined
+        state.imageFile || undefined,
+        state.textAnalysis || undefined
       );
 
       if (result.success) {
@@ -148,6 +151,7 @@ export const useTriageAnalysis = () => {
           loading: false,
           audioFile: null,
           imageFile: null,
+          textAnalysis: '',
         }));
         return {
           success: true,
@@ -191,12 +195,25 @@ export const useTriageAnalysis = () => {
       patientId: null,
       audioFile: null,
       imageFile: null,
+      textAnalysis: '',
       loading: false,
       error: null,
       result: null,
       registrationComplete: false,
     });
   };
+
+  /**
+   * Text analysis update karo
+   */
+  const handleTextAnalysisChange = (text: string) => {
+    setState(prev => ({ ...prev, textAnalysis: text }));
+  };
+
+  /**
+   * Get current text analysis
+   */
+  const getTextAnalysis = () => state.textAnalysis;
 
   return {
     // State
@@ -206,8 +223,10 @@ export const useTriageAnalysis = () => {
     handleRegisterPatient,
     handleAudioSelect,
     handleImageSelect,
+    handleTextAnalysisChange,
     handleAnalyze,
     resetAnalysis,
     resetForm,
+    getTextAnalysis,
   };
 };

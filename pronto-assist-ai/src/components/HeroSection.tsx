@@ -42,7 +42,7 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-hero-bg">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-hero-bg dark:bg-slate-900">
       {/* 3D Background */}
       <HeroScene />
 

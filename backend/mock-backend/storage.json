@@ -131,6 +131,173 @@
       "medical_history": "fdf",
       "emergency_contact": "1233",
       "created_at": "2026-04-09T22:20:29.054Z"
+    },
+    {
+      "id": 12,
+      "name": "ABCD",
+      "age": 45,
+      "phone": "929299292",
+      "email": "ABC@ABC.COM",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": "fdfadsadada",
+      "emergency_contact": "1233",
+      "created_at": "2026-04-09T22:30:35.416Z"
+    },
+    {
+      "id": 13,
+      "name": "ABCD",
+      "age": 45,
+      "phone": "929299292",
+      "email": "ABC@ABC.COM",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": "abc",
+      "emergency_contact": "1233",
+      "created_at": "2026-04-09T23:47:55.117Z"
+    },
+    {
+      "id": 14,
+      "name": "ABCD",
+      "age": 45,
+      "phone": "929299292",
+      "email": "ABC@ABC.COM",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": "abcdss",
+      "emergency_contact": "1233",
+      "created_at": "2026-04-09T23:57:27.575Z"
+    },
+    {
+      "id": 15,
+      "name": "ABCD",
+      "age": 45,
+      "phone": "929299292",
+      "email": "ABC@ABC.COM",
+      "gender": "Male",
+      "address": "maliya nagar",
+      "medical_history": null,
+      "emergency_contact": "1233",
+      "created_at": "2026-04-10T00:03:51.993Z"
+    },
+    {
+      "id": 16,
+      "name": "ABCD",
+      "age": 45,
+      "phone": "929299292",
+      "email": "ABC@ABC.COM",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": "njnjnjnjnj",
+      "emergency_contact": "1233",
+      "created_at": "2026-04-10T00:19:10.077Z",
+      "voice_fingerprint": "VOICE_7b6ccb70"
+    },
+    {
+      "id": 17,
+      "name": "ABCD",
+      "age": 45,
+      "phone": "929299292",
+      "email": "ABC@ABC.COM",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": "njnjnjnjnj",
+      "emergency_contact": "1233",
+      "created_at": "2026-04-10T00:21:44.583Z",
+      "voice_fingerprint": "VOICE_7b6ccb70"
+    },
+    {
+      "id": 18,
+      "name": "ABCD",
+      "age": 45,
+      "phone": null,
+      "email": "ABC@ABC.COM",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": null,
+      "emergency_contact": "1233",
+      "created_at": "2026-04-10T00:43:30.537Z"
+    },
+    {
+      "id": 19,
+      "name": "ABCD",
+      "age": 45,
+      "phone": null,
+      "email": "ABC@ABC.COM",
+      "gender": "Other",
+      "address": null,
+      "medical_history": null,
+      "emergency_contact": "1233",
+      "created_at": "2026-04-10T00:44:31.008Z"
+    },
+    {
+      "id": 20,
+      "name": "veer",
+      "age": 11,
+      "phone": "11111111",
+      "email": "veer@veer.com",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": "abcdefg",
+      "emergency_contact": "108",
+      "created_at": "2026-04-10T01:42:18.525Z",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "image_fingerprint": "IMAGE_08130518"
+    },
+    {
+      "id": 21,
+      "name": "veer",
+      "age": 11,
+      "phone": "11111111",
+      "email": "veer@veer.com",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": null,
+      "emergency_contact": "108",
+      "created_at": "2026-04-10T01:51:21.523Z",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "image_fingerprint": "IMAGE_08130518"
+    },
+    {
+      "id": 22,
+      "name": "veer",
+      "age": 11,
+      "phone": "11111111",
+      "email": "veer@veer.com",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": null,
+      "emergency_contact": "108",
+      "created_at": "2026-04-10T01:58:26.724Z",
+      "image_fingerprint": "IMAGE_586fdb0f"
+    },
+    {
+      "id": 23,
+      "name": "veer",
+      "age": 11,
+      "phone": "11111111",
+      "email": "veer@veer.com",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": null,
+      "emergency_contact": "108",
+      "created_at": "2026-04-10T02:10:19.438Z",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "image_fingerprint": "IMAGE_586fdb0f"
+    },
+    {
+      "id": 24,
+      "name": "veer",
+      "age": 11,
+      "phone": "11111111",
+      "email": "veer@veer.com",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": null,
+      "emergency_contact": "108",
+      "created_at": "2026-04-10T02:36:55.033Z",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "image_fingerprint": "IMAGE_586fdb0f"
     }
   ],
   "triage_records": [
@@ -265,8 +432,1015 @@
       "timestamp": "2026-04-09T22:21:31.547Z",
       "attended_at": null,
       "completed_at": null
+    },
+    {
+      "id": 7,
+      "patient_id": 12,
+      "audio_score": 5,
+      "audio_transcript": "N/A",
+      "audio_severity": "Normal",
+      "voice_authenticity": "MOCK_VERIFIED",
+      "image_score": 5.6,
+      "image_analysis": "Mock image analysis: Sprain",
+      "injury_category": "Sprain",
+      "injury_severity": "Moderate",
+      "priority_level": "MEDIUM 🟡",
+      "triage_score": 5.3,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-09T22:31:18.938Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 8,
+      "patient_id": 13,
+      "audio_score": 5,
+      "audio_transcript": "N/A",
+      "audio_severity": "Normal",
+      "voice_authenticity": "VERIFIED",
+      "image_score": 7,
+      "image_analysis": "Image analysis: Burn detected",
+      "injury_category": "Burn",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 3,
+      "priority_label": "🟡 MEDIUM",
+      "priority_color": "yellow",
+      "triage_score": 6,
+      "recommended_specialist": "Burn Specialist",
+      "ai_recommendation": "See Burn Specialist - Priority Level 3",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-09T23:48:52.715Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 9,
+      "patient_id": 14,
+      "audio_score": 5,
+      "audio_transcript": "N/A",
+      "audio_severity": "Normal",
+      "voice_authenticity": "VERIFIED",
+      "image_score": 2.9,
+      "image_analysis": "Image analysis: Fracture detected",
+      "injury_category": "Fracture",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 4,
+      "priority_label": "🟢 LOW",
+      "priority_color": "green",
+      "triage_score": 3.95,
+      "recommended_specialist": "Orthopedic Specialist",
+      "ai_recommendation": "See Orthopedic Specialist - Priority Level 4",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-09T23:57:45.195Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 10,
+      "patient_id": 14,
+      "audio_score": 3.5,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_authenticity": "VERIFIED",
+      "image_score": 5,
+      "image_analysis": "N/A",
+      "injury_category": "Unknown",
+      "injury_severity": "Unknown",
+      "text_analysis": "fever",
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": "Information verified"
+      },
+      "priority_level": 4,
+      "priority_label": "🟢 LOW",
+      "priority_color": "green",
+      "triage_score": 4.25,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 4",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-09T23:59:50.090Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 11,
+      "patient_id": 15,
+      "audio_score": 5,
+      "audio_transcript": "N/A",
+      "audio_severity": "Normal",
+      "voice_authenticity": "VERIFIED",
+      "image_score": 5,
+      "image_analysis": "N/A",
+      "injury_category": "Unknown",
+      "injury_severity": "Unknown",
+      "text_analysis": "juhh",
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": "Information verified"
+      },
+      "priority_level": 3,
+      "priority_label": "🟡 MEDIUM",
+      "priority_color": "yellow",
+      "triage_score": 5,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 3",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T00:04:41.193Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 12,
+      "patient_id": 16,
+      "audio_score": 2.9,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "voice_authenticity": "VERIFIED 🔒",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "image_score": 5,
+      "image_analysis": "N/A",
+      "injury_category": "Unknown",
+      "injury_severity": "Unknown",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 4,
+      "priority_label": "🟢 LOW",
+      "priority_color": "green",
+      "triage_score": 3.95,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 4",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T00:19:40.577Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 13,
+      "patient_id": 16,
+      "audio_score": 5,
+      "audio_transcript": "N/A",
+      "audio_severity": "Normal",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "voice_authenticity": "NOT VERIFIED",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No voice data to verify"
+      },
+      "image_score": 1.1,
+      "image_analysis": "Image analysis: Fracture detected",
+      "injury_category": "Fracture",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No voice data to verify"
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 3,
+      "priority_label": "🟡 MEDIUM",
+      "priority_color": "yellow",
+      "triage_score": 3.05,
+      "recommended_specialist": "Orthopedic Specialist",
+      "ai_recommendation": "See Orthopedic Specialist - Priority Level 3",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T00:21:01.200Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 14,
+      "patient_id": 17,
+      "audio_score": 3.9,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "voice_authenticity": "VERIFIED 🔒",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "image_score": 3.3,
+      "image_analysis": "Image analysis: Fracture detected",
+      "injury_category": "Fracture",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 4,
+      "priority_label": "🟢 LOW",
+      "priority_color": "green",
+      "triage_score": 3.6,
+      "recommended_specialist": "Orthopedic Specialist",
+      "ai_recommendation": "See Orthopedic Specialist - Priority Level 4",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T00:22:17.672Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 15,
+      "patient_id": 18,
+      "audio_score": 5,
+      "audio_transcript": "N/A",
+      "audio_severity": "Normal",
+      "voice_fingerprint": null,
+      "voice_authenticity": "NOT VERIFIED",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No voice data to verify"
+      },
+      "image_score": 5,
+      "image_analysis": "N/A",
+      "injury_category": "Unknown",
+      "injury_severity": "Unknown",
+      "text_analysis": "fever",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No voice data to verify"
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": "Information verified"
+      },
+      "priority_level": 5,
+      "priority_label": "🔵 MINIMAL",
+      "priority_color": "blue",
+      "triage_score": 5,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 5",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T00:44:01.897Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 16,
+      "patient_id": 20,
+      "audio_score": 1.2,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "voice_authenticity": "VERIFIED 🔒",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "image_score": 2.2,
+      "image_analysis": "Image analysis: No Visible Injury detected",
+      "image_fingerprint": "IMAGE_08130518",
+      "image_authenticity": "VERIFIED 🔒",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "injury_category": "No Visible Injury",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 2,
+      "priority_label": "🟠 HIGH",
+      "priority_color": "orange",
+      "triage_score": 1.7,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 2",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T01:42:45.074Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 17,
+      "patient_id": 20,
+      "audio_score": 5,
+      "audio_transcript": "N/A",
+      "audio_severity": "Normal",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "voice_authenticity": "NOT VERIFIED",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No voice data to verify"
+      },
+      "image_score": 1.5,
+      "image_analysis": "Image analysis: Dislocation detected",
+      "image_fingerprint": "IMAGE_08130518",
+      "image_authenticity": "VERIFIED 🔒",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "injury_category": "Dislocation",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "No voice data to verify"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 3,
+      "priority_label": "🟡 MEDIUM",
+      "priority_color": "yellow",
+      "triage_score": 3.25,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 3",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T01:46:29.922Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 18,
+      "patient_id": 21,
+      "audio_score": 1.9,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "voice_authenticity": "VERIFIED 🔒",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "image_score": 2.3,
+      "image_analysis": "Image analysis: No Visible Injury detected",
+      "image_fingerprint": "IMAGE_08130518",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "watermark_detection": {
+        "hasWatermark": true,
+        "isSynthetic": true,
+        "confidence": 0.7,
+        "reason": "Suspicious filename contains watermark indicators; Unusual pixel patterns detected (watermark/AI generation signature)",
+        "patternScore": 0.66,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "image_security_status": {
+        "hasWatermark": true,
+        "isSynthetic": true,
+        "confidence": 70,
+        "reason": "Suspicious filename contains watermark indicators; Unusual pixel patterns detected (watermark/AI generation signature)",
+        "verdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "No Visible Injury",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 2,
+      "priority_label": "🟠 HIGH",
+      "priority_color": "orange",
+      "triage_score": 2.1,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 2",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T01:51:41.720Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 19,
+      "patient_id": 22,
+      "audio_score": 5,
+      "audio_transcript": "N/A",
+      "audio_severity": "Normal",
+      "voice_fingerprint": null,
+      "voice_authenticity": "NOT VERIFIED",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No voice data to verify"
+      },
+      "image_score": 3.7,
+      "image_analysis": "Image analysis: Mild Abrasion detected",
+      "image_fingerprint": "IMAGE_586fdb0f",
+      "image_authenticity": "VERIFIED 🔒",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "watermark_detection": {
+        "hasWatermark": false,
+        "isSynthetic": false,
+        "confidence": 0,
+        "reason": "Image appears authentic",
+        "patternScore": 0.31,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "image_security_status": {
+        "hasWatermark": false,
+        "isSynthetic": false,
+        "confidence": 0,
+        "reason": "Image appears authentic",
+        "verdict": "✅ AUTHENTIC"
+      },
+      "injury_category": "Mild Abrasion",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "No voice data to verify"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 5,
+      "priority_label": "🔵 MINIMAL",
+      "priority_color": "blue",
+      "triage_score": 4.35,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 5",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T01:58:51.805Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 20,
+      "patient_id": 23,
+      "audio_score": 2.3,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "voice_authenticity": "FLAGGED ⚠️",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": true,
+        "isSpoofed": false,
+        "confidence": 0.5,
+        "reason": "Too-perfect byte regularity (AI-generated audio signature); TTS generator watermark detected",
+        "audioLength": 124014,
+        "silenceRatio": 5,
+        "regularityScore": 59
+      },
+      "voice_security_status": {
+        "isFakeVoice": true,
+        "isSpoofed": false,
+        "confidence": 50,
+        "reason": "Too-perfect byte regularity (AI-generated audio signature); TTS generator watermark detected",
+        "verdict": "🛑 FAKE VOICE DETECTED"
+      },
+      "image_score": 3.9,
+      "image_analysis": "Image analysis: Laceration detected",
+      "image_fingerprint": "IMAGE_586fdb0f",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "watermark_detection": {
+        "hasWatermark": false,
+        "isSynthetic": false,
+        "confidence": 0,
+        "reason": "Image appears authentic",
+        "patternScore": 0.31,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "camera_authentication": {
+        "isRealCamera": false,
+        "confidence": 0.1,
+        "reason": "No EXIF metadata detected; Natural sensor noise detected",
+        "hasExifData": false,
+        "hasCameraModel": false,
+        "hasLensInfo": false,
+        "noiseLevel": 297,
+        "jpegQuality": 0
+      },
+      "image_security_status": {
+        "watermark": {
+          "hasWatermark": false,
+          "isSynthetic": false,
+          "confidence": 0,
+          "reason": "Image appears authentic",
+          "verdict": "✅ NO WATERMARK"
+        },
+        "camera": {
+          "isRealCamera": false,
+          "confidence": 10,
+          "reason": "No EXIF metadata detected; Natural sensor noise detected",
+          "hasCameraModel": false,
+          "hasExifData": false,
+          "verdict": "🛑 NOT FROM REAL CAMERA"
+        },
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Laceration",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 3,
+      "priority_label": "🟡 MEDIUM",
+      "priority_color": "yellow",
+      "triage_score": 3.1,
+      "recommended_specialist": "General Surgeon",
+      "ai_recommendation": "See General Surgeon - Priority Level 3",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T02:10:43.071Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 21,
+      "patient_id": 23,
+      "audio_score": 1.6,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_611a94fc",
+      "voice_authenticity": "FLAGGED ⚠️",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": true,
+        "isSpoofed": false,
+        "confidence": 0.5,
+        "reason": "Too-perfect byte regularity (AI-generated audio signature); TTS generator watermark detected",
+        "audioLength": 97648,
+        "silenceRatio": 4,
+        "regularityScore": 63
+      },
+      "voice_security_status": {
+        "isFakeVoice": true,
+        "isSpoofed": false,
+        "confidence": 50,
+        "reason": "Too-perfect byte regularity (AI-generated audio signature); TTS generator watermark detected",
+        "verdict": "🛑 FAKE VOICE DETECTED"
+      },
+      "image_score": 5,
+      "image_analysis": "N/A",
+      "image_fingerprint": "IMAGE_586fdb0f",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No image data to verify"
+      },
+      "watermark_detection": null,
+      "camera_authentication": null,
+      "image_security_status": {
+        "watermark": null,
+        "camera": null,
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Unknown",
+      "injury_severity": "Unknown",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "No image data to verify"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 3,
+      "priority_label": "🟡 MEDIUM",
+      "priority_color": "yellow",
+      "triage_score": 3.3,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 3",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T02:14:18.922Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 22,
+      "patient_id": 23,
+      "audio_score": 3.3,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "voice_authenticity": "VERIFIED 🔒",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 0.2,
+        "reason": "TTS generator watermark detected",
+        "audioLength": 164402,
+        "silenceRatio": 27,
+        "regularityScore": 25
+      },
+      "voice_security_status": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 20,
+        "reason": "TTS generator watermark detected",
+        "verdict": "✅ AUTHENTIC VOICE"
+      },
+      "image_score": 5,
+      "image_analysis": "N/A",
+      "image_fingerprint": "IMAGE_586fdb0f",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No image data to verify"
+      },
+      "watermark_detection": null,
+      "camera_authentication": null,
+      "image_security_status": {
+        "watermark": null,
+        "camera": null,
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Unknown",
+      "injury_severity": "Unknown",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "No image data to verify"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 5,
+      "priority_label": "🔵 MINIMAL",
+      "priority_color": "blue",
+      "triage_score": 4.15,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 5",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T02:21:01.682Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 23,
+      "patient_id": 23,
+      "audio_score": 5,
+      "audio_transcript": "N/A",
+      "audio_severity": "Normal",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "voice_authenticity": "FLAGGED ⚠️",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No voice data to verify"
+      },
+      "voice_spoofing_detection": null,
+      "voice_security_status": null,
+      "image_score": 5,
+      "image_analysis": "N/A",
+      "image_fingerprint": "IMAGE_586fdb0f",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No image data to verify"
+      },
+      "watermark_detection": null,
+      "camera_authentication": null,
+      "image_security_status": {
+        "watermark": null,
+        "camera": null,
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Unknown",
+      "injury_severity": "Unknown",
+      "text_analysis": "hh",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "No voice data to verify"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "No image data to verify"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": "Information verified"
+      },
+      "priority_level": 5,
+      "priority_label": "🔵 MINIMAL",
+      "priority_color": "blue",
+      "triage_score": 5,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 5",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T02:35:26.595Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 24,
+      "patient_id": 24,
+      "audio_score": 4.2,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "voice_authenticity": "VERIFIED 🔒",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 0.2,
+        "reason": "TTS generator watermark detected",
+        "audioLength": 164402,
+        "silenceRatio": 27,
+        "regularityScore": 25
+      },
+      "voice_security_status": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 20,
+        "reason": "TTS generator watermark detected",
+        "verdict": "✅ AUTHENTIC VOICE"
+      },
+      "image_score": 3.2,
+      "image_analysis": "Image analysis: Mild Abrasion detected",
+      "image_fingerprint": "IMAGE_586fdb0f",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "watermark_detection": {
+        "hasWatermark": false,
+        "isSynthetic": false,
+        "confidence": 0,
+        "reason": "Image appears authentic",
+        "patternScore": 0.31,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "camera_authentication": {
+        "isRealCamera": false,
+        "confidence": 0.1,
+        "reason": "No EXIF metadata detected; Natural sensor noise detected",
+        "hasExifData": false,
+        "hasCameraModel": false,
+        "hasLensInfo": false,
+        "noiseLevel": 297,
+        "jpegQuality": 0
+      },
+      "image_security_status": {
+        "watermark": {
+          "hasWatermark": false,
+          "isSynthetic": false,
+          "confidence": 0,
+          "reason": "Image appears authentic",
+          "verdict": "✅ NO WATERMARK"
+        },
+        "camera": {
+          "isRealCamera": false,
+          "confidence": 10,
+          "reason": "No EXIF metadata detected; Natural sensor noise detected",
+          "hasCameraModel": false,
+          "hasExifData": false,
+          "verdict": "🛑 NOT FROM REAL CAMERA"
+        },
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Mild Abrasion",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 4,
+      "priority_label": "🟢 LOW",
+      "priority_color": "green",
+      "triage_score": 3.7,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 4",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T02:37:15.619Z",
+      "attended_at": null,
+      "completed_at": null
     }
   ],
-  "nextPatientId": 12,
-  "nextRecordId": 7
+  "nextPatientId": 25,
+  "nextRecordId": 25
 }
