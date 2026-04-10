@@ -51,7 +51,7 @@ export function PatientIntakeForm() {
 
   const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
     // Validation
     if (!formData.name || !formData.age) {
       alert('❌ Please fill Name and Age');
@@ -377,7 +377,7 @@ export function PatientIntakeForm() {
                 <AlertCircle className="h-4 w-4" />
                 <AlertDescription>
                   💡 Upload at least one file (audio or image) OR enter text analysis for analysis
-                  <br/>
+                  <br />
                   🔒 Your voice gets authenticated and verified with text input for security
                 </AlertDescription>
               </Alert>
@@ -464,11 +464,11 @@ export function PatientIntakeForm() {
                     <span className="font-medium text-gray-700 dark:text-gray-300">Recommended Specialist:</span>
                     <span className="font-semibold text-blue-600 dark:text-blue-400">{result.analysis.recommended_specialist}</span>
                   </div>
-                  
+
                   {/* Voice Authentication */}
                   <div className="border-t border-gray-200 dark:border-slate-600 pt-3 mt-3">
                     <h3 className="font-semibold text-sm text-gray-700 dark:text-gray-300 mb-3">🔒 Security Verification</h3>
-                    
+
                     {/* Voice Authentication */}
                     <div className="mb-3 pb-3 border-b border-gray-200 dark:border-slate-600">
                       <div className="flex justify-between">
@@ -483,17 +483,16 @@ export function PatientIntakeForm() {
                         </div>
                       )}
                     </div>
-                    
+
                     {/* Voice Spoofing Detection */}
                     {result.analysis.voice_security_status && (
                       <div className="mb-3 pb-3 border-b border-gray-200 dark:border-slate-600">
                         <div className="flex justify-between items-start">
                           <span className="font-medium text-gray-700 dark:text-gray-300">🎙️ Voice Spoofing Check:</span>
-                          <span className={`font-semibold text-sm ${
-                            result.analysis.voice_security_status.verdict?.includes('FAKE') 
-                              ? 'text-red-600 bg-red-50 dark:bg-red-900/20 px-2 py-1 rounded' 
+                          <span className={`font-semibold text-sm ${result.analysis.voice_security_status.verdict?.includes('FAKE')
+                              ? 'text-red-600 bg-red-50 dark:bg-red-900/20 px-2 py-1 rounded'
                               : 'text-green-600 bg-green-50 dark:bg-green-900/20 px-2 py-1 rounded'
-                          }`}>
+                            }`}>
                             {result.analysis.voice_security_status.verdict}
                           </span>
                         </div>
@@ -505,7 +504,7 @@ export function PatientIntakeForm() {
                         </div>
                       </div>
                     )}
-                    
+
                     {/* Image Authentication */}
                     <div className="mb-3 pb-3 border-b border-gray-200 dark:border-slate-600">
                       <div className="flex justify-between">
@@ -520,21 +519,20 @@ export function PatientIntakeForm() {
                         </div>
                       )}
                     </div>
-                    
+
                     {/* Image Security Status */}
                     {result.analysis.image_security_status && (
                       <div className="mb-3 pb-3 border-b border-gray-200 dark:border-slate-600">
                         <div className="flex justify-between items-start mb-2">
                           <span className="font-medium text-gray-700 dark:text-gray-300">🔐 Image Security Analysis:</span>
-                          <span className={`font-bold text-sm px-3 py-1 rounded ${
-                            result.analysis.image_security_status.finalVerdict?.includes('AUTHENTIC') 
-                              ? 'bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400' 
+                          <span className={`font-bold text-sm px-3 py-1 rounded ${result.analysis.image_security_status.finalVerdict?.includes('AUTHENTIC')
+                              ? 'bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-400'
                               : 'bg-red-50 dark:bg-red-900/20 text-red-700 dark:text-red-400'
-                          }`}>
+                            }`}>
                             {result.analysis.image_security_status.finalVerdict}
                           </span>
                         </div>
-                        
+
                         {/* Watermark Check */}
                         {result.analysis.image_security_status.watermark && (
                           <div className="text-xs text-gray-600 dark:text-gray-400 mb-2 pl-2 border-l-2 border-yellow-400">
@@ -544,7 +542,7 @@ export function PatientIntakeForm() {
                             <div>• Confidence: {result.analysis.image_security_status.watermark.confidence}%</div>
                           </div>
                         )}
-                        
+
                         {/* Camera Authentication */}
                         {result.analysis.image_security_status.camera && (
                           <div className="text-xs text-gray-600 dark:text-gray-400 pl-2 border-l-2 border-blue-400">
@@ -558,7 +556,7 @@ export function PatientIntakeForm() {
                         )}
                       </div>
                     )}
-                    
+
                     {/* Text Authenticity */}
                     <div>
                       <div className="flex justify-between">
@@ -574,7 +572,7 @@ export function PatientIntakeForm() {
                       )}
                     </div>
                   </div>
-                  
+
                   <div className="flex justify-between mt-3">
                     <span className="font-medium text-gray-700 dark:text-gray-300">Record ID:</span>
                     <span className="text-gray-600 dark:text-gray-400">#{result.record_id}</span>

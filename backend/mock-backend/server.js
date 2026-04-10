@@ -81,19 +81,19 @@ function detectInjury(imagePresent) {
 
 function detectFraudInformation(text) {
   if (!text) return { isFraud: false, confidence: 0, reason: '' };
-  
+
   const fraudPatterns = [
     { pattern: /fake|hoax|not real/i, reason: 'Contains false claims' },
     { pattern: /not injured|completely fine|lying/i, reason: 'Contradicts injury report' },
     { pattern: /test|demo|fake/i, reason: 'Test/Demo data detected' },
   ];
-  
+
   for (let fp of fraudPatterns) {
     if (fp.pattern.test(text)) {
       return { isFraud: true, confidence: 0.8, reason: fp.reason };
     }
   }
-  
+
   return { isFraud: false, confidence: 0, reason: 'Information verified' };
 }
 
@@ -103,83 +103,83 @@ function detectFraudInformation(text) {
  */
 function detectVoiceSpoofing(audioBuffer) {
   if (!audioBuffer) return { isFakeVoice: false, isSpoofed: false, confidence: 0, reason: 'No audio data' };
-  
+
   const view = new Uint8Array(audioBuffer);
-  
+
   // 1. Check audio format header
   const header = Array.from(view.slice(0, 12)).map(b => b.toString(16)).join('');
   const isValidAudio = header.includes('52494646') || // RIFF (WAV)
-                       header.includes('ffd8') || // Might be corrupted
-                       view[0] === 0xFF; // MP3 header
-  
+    header.includes('ffd8') || // Might be corrupted
+    view[0] === 0xFF; // MP3 header
+
   if (!isValidAudio && view.length < 1000) {
-    return { 
-      isFakeVoice: true, 
-      isSpoofed: true, 
-      confidence: 0.9, 
-      reason: 'Invalid audio format or corrupted file - likely synthetic' 
+    return {
+      isFakeVoice: true,
+      isSpoofed: true,
+      confidence: 0.9,
+      reason: 'Invalid audio format or corrupted file - likely synthetic'
     };
   }
-  
+
   // 2. Analyze frequency patterns (simulate spectral analysis)
   let silencePatterns = 0;
   let perfectRegularity = 0;
-  
+
   for (let i = 100; i < Math.min(5000, view.length - 4); i += 50) {
     // Check for unnatural silence patterns
-    if (view[i] === 0 && view[i+1] === 0 && view[i+2] === 0) {
+    if (view[i] === 0 && view[i + 1] === 0 && view[i + 2] === 0) {
       silencePatterns++;
     }
-    
+
     // Check for too-perfect regularity (synthetic)
-    if (view[i] === view[i+2] && view[i+1] === view[i+3]) {
+    if (view[i] === view[i + 2] && view[i + 1] === view[i + 3]) {
       perfectRegularity++;
     }
   }
-  
+
   const silenceRatio = silencePatterns / 100;
   const regularityRatio = perfectRegularity / 100;
-  
+
   // 3. Check for compression artifacts (voice encoders leave signatures)
   let compressionMarkers = 0;
   for (let i = 200; i < Math.min(2000, view.length); i++) {
     // Check for specific byte patterns common in synthetic voice codecs
-    if ((view[i] === 0xFF && view[i+1] === 0xD8) || // JPEG marker
-        (view[i] === 0x44 && view[i+1] === 0x43)) { // AI Voice codec
+    if ((view[i] === 0xFF && view[i + 1] === 0xD8) || // JPEG marker
+      (view[i] === 0x44 && view[i + 1] === 0x43)) { // AI Voice codec
       compressionMarkers++;
     }
   }
-  
+
   // 4. Detect text-to-speech generator patterns
   const ttsIndicators = view.includes(0xDE) && view.includes(0xAD) && view.includes(0xBE);
-  
+
   // 5. Calculate spoofing confidence
   let spoofingConfidence = 0;
   let reasons = [];
-  
+
   if (silenceRatio > 0.3) {
     spoofingConfidence += 0.25;
     reasons.push('Unnatural silence patterns detected (synthetic voice)');
   }
-  
+
   if (regularityRatio > 0.4) {
     spoofingConfidence += 0.3;
     reasons.push('Too-perfect byte regularity (AI-generated audio signature)');
   }
-  
+
   if (compressionMarkers > 5) {
     spoofingConfidence += 0.25;
     reasons.push('Text-to-speech codec markers found');
   }
-  
+
   if (ttsIndicators) {
     spoofingConfidence += 0.2;
     reasons.push('TTS generator watermark detected');
   }
-  
+
   const isFakeVoice = spoofingConfidence > 0.4;
   const isSpoofed = spoofingConfidence > 0.5;
-  
+
   return {
     isFakeVoice,
     isSpoofed,
@@ -197,17 +197,17 @@ function detectVoiceSpoofing(audioBuffer) {
  */
 function detectRealCameraImage(imageBuffer, filename) {
   if (!imageBuffer) return { isRealCamera: false, confidence: 0, reason: 'No image data' };
-  
+
   const view = new Uint8Array(imageBuffer);
-  
+
   // 1. Check EXIF metadata for camera info
   let hasExifData = false;
   let hasCameraModel = false;
   let hasLensInfo = false;
-  
+
   // Look for EXIF marker (0xFFE1 in JPEG)
   for (let i = 0; i < view.length - 8; i++) {
-    if (view[i] === 0xFF && view[i+1] === 0xE1) {
+    if (view[i] === 0xFF && view[i + 1] === 0xE1) {
       hasExifData = true;
       // Check for camera model strings in EXIF
       const segment = view.slice(i, Math.min(i + 500));
@@ -220,74 +220,74 @@ function detectRealCameraImage(imageBuffer, filename) {
       }
     }
   }
-  
+
   // 2. Check for noise patterns (real cameras have sensor noise)
   let noiseLevel = 0;
   for (let i = 1000; i < Math.min(10000, view.length - 2); i += 10) {
-    const diff = Math.abs(view[i] - view[i+1]);
+    const diff = Math.abs(view[i] - view[i + 1]);
     if (diff > 5 && diff < 50) {
       noiseLevel++;
     }
   }
   const noiseLevelPercentage = noiseLevel / 100;
-  
+
   // 3. Check for compression artifacts (real cameras compress differently than AI)
   let jpegBlockPatterns = 0;
   for (let i = 100; i < Math.min(5000, view.length - 16); i++) {
     // JPEG uses 8x8 blocks, check for block boundaries
-    if ((i % 8 === 0) && view[i] === view[i+1] && view[i] === view[i+8]) {
+    if ((i % 8 === 0) && view[i] === view[i + 1] && view[i] === view[i + 8]) {
       jpegBlockPatterns++;
     }
   }
-  
+
   // 4. Check for AI generation markers
   let aiMarkers = 0;
   const suspiciousStrings = ['stable', 'diffusion', 'midjourney', 'dalle', 'generated'];
   for (let word of suspiciousStrings) {
     const pattern = new RegExp(word, 'i');
-    if (pattern.test(new TextDecoder('utf-8', {fatal: false}).decode(view.slice(0, 2000)))) {
+    if (pattern.test(new TextDecoder('utf-8', { fatal: false }).decode(view.slice(0, 2000)))) {
       aiMarkers++;
     }
   }
-  
+
   // 5. Calculate camera authenticity score
   let cameraScore = 0;
   let reasons = [];
-  
+
   if (hasExifData) {
     cameraScore += 0.4;
     reasons.push('Valid EXIF metadata found');
   } else {
     reasons.push('No EXIF metadata detected');
   }
-  
+
   if (hasCameraModel) {
     cameraScore += 0.3;
     reasons.push('Real camera model identified in EXIF');
   }
-  
+
   if (hasLensInfo) {
     cameraScore += 0.15;
     reasons.push('Lens/sensor information present');
   }
-  
+
   if (noiseLevelPercentage > 0.15) {
     cameraScore += 0.1;
     reasons.push('Natural sensor noise detected');
   }
-  
+
   if (jpegBlockPatterns > 50) {
     cameraScore += 0.05;
     reasons.push('Real camera JPEG compression pattern detected');
   }
-  
+
   if (aiMarkers > 0) {
     cameraScore -= 0.5;
     reasons.push('AI generation watermarks/strings detected');
   }
-  
+
   const isRealCamera = cameraScore > 0.5;
-  
+
   return {
     isRealCamera,
     confidence: Math.min(0.99, Math.max(0, cameraScore)),
@@ -306,17 +306,17 @@ function detectRealCameraImage(imageBuffer, filename) {
  */
 function generateVoiceFingerprint(audioBuffer) {
   if (!audioBuffer) return null;
-  
+
   // Simulate voice fingerprinting by creating a hash of audio characteristics
   // Real system would use spectral analysis, MFCC, etc.
   let fingerprintHash = 0;
   const view = new Uint8Array(audioBuffer);
-  
+
   for (let i = 0; i < view.length; i++) {
     fingerprintHash = ((fingerprintHash << 5) - fingerprintHash) + view[i];
     fingerprintHash |= 0; // Convert to 32-bit integer
   }
-  
+
   return 'VOICE_' + Math.abs(fingerprintHash).toString(16).padStart(8, '0');
 }
 
@@ -344,9 +344,9 @@ function verifyVoiceToText(voiceFingerprint, textAnalysis, audioPresent) {
 
   // Generate confidence score
   const confidence = Math.min(0.95, 0.6 + (Math.random() * 0.35));
-  
-  return { 
-    verified: confidence > 0.7, 
+
+  return {
+    verified: confidence > 0.7,
     confidence: Math.round(confidence * 100) / 100,
     reason: confidence > 0.7 ? 'Voice and text verified as authentic' : 'Voice verification unsuccessful - unauthorized input risk',
     voiceFingerprint
@@ -370,12 +370,12 @@ function storePatientVoiceProfile(patientId, voiceFingerprint) {
  */
 function detectImageWatermark(imageBuffer, filename) {
   if (!imageBuffer) return { hasWatermark: false, isSynthetic: false, confidence: 0, reason: 'No image data' };
-  
+
   const view = new Uint8Array(imageBuffer);
-  
+
   // 1. Check filename for watermark indicators
   const filenameCheck = /watermark|logo|stamp|synthetic|ai-generated|fake|test/i.test(filename || '');
-  
+
   // 2. Check image header/magic bytes
   const header = Array.from(view.slice(0, 8)).map(b => b.toString(16)).join('');
   const isValidImage = (
@@ -383,53 +383,53 @@ function detectImageWatermark(imageBuffer, filename) {
     header.startsWith('89504e47') || // PNG
     header.startsWith('47494638') // GIF
   );
-  
+
   if (!isValidImage) {
-    return { 
-      hasWatermark: true, 
-      isSynthetic: true, 
-      confidence: 0.95, 
-      reason: 'Invalid/corrupted image format - possibly synthetic or tampered' 
+    return {
+      hasWatermark: true,
+      isSynthetic: true,
+      confidence: 0.95,
+      reason: 'Invalid/corrupted image format - possibly synthetic or tampered'
     };
   }
-  
+
   // 3. Analyze byte patterns for common watermark signatures
   let suspiciousPatternCount = 0;
-  
+
   // Check for repeated byte patterns (common in watermarks)
   for (let i = 100; i < Math.min(1000, view.length - 4); i++) {
     if (view[i] === view[i + 1] && view[i] === view[i + 2] && view[i] === view[i + 3]) {
       suspiciousPatternCount++;
     }
   }
-  
+
   const patternRatio = suspiciousPatternCount / 100;
-  
+
   // 4. Check metadata (EXIF) for camera info
   const hasMetadata = view.indexOf(255) > -1 && view.indexOf(216) > -1; // JPG markers
-  
+
   // 5. Calculate suspicion score
   let watermarkConfidence = 0;
   let reasons = [];
-  
+
   if (filenameCheck) {
     watermarkConfidence += 0.4;
     reasons.push('Suspicious filename contains watermark indicators');
   }
-  
+
   if (!hasMetadata) {
     watermarkConfidence += 0.2;
     reasons.push('No camera metadata found (possible synthetic image)');
   }
-  
+
   if (patternRatio > 0.5) {
     watermarkConfidence += 0.3;
     reasons.push('Unusual pixel patterns detected (watermark/AI generation signature)');
   }
-  
+
   const hasWatermark = watermarkConfidence > 0.4;
   const isSynthetic = watermarkConfidence > 0.5;
-  
+
   return {
     hasWatermark,
     isSynthetic,
@@ -447,17 +447,17 @@ function detectImageWatermark(imageBuffer, filename) {
  */
 function generateImageFingerprint(imageBuffer) {
   if (!imageBuffer) return null;
-  
+
   // Simulate image fingerprinting by creating a hash of image characteristics
   // Real system would use visual features, color histogram, edge detection, etc.
   let fingerprintHash = 0;
   const view = new Uint8Array(imageBuffer);
-  
+
   for (let i = 0; i < view.length; i += Math.max(1, Math.floor(view.length / 1000))) {
     fingerprintHash = ((fingerprintHash << 5) - fingerprintHash) + view[i];
     fingerprintHash |= 0; // Convert to 32-bit integer
   }
-  
+
   return 'IMAGE_' + Math.abs(fingerprintHash).toString(16).padStart(8, '0');
 }
 
@@ -485,9 +485,9 @@ function verifyImageToText(imageFingerprint, textAnalysis, imagePresent) {
 
   // Generate confidence score based on match quality
   const confidence = Math.min(0.95, 0.6 + (Math.random() * 0.35));
-  
-  return { 
-    verified: confidence > 0.7, 
+
+  return {
+    verified: confidence > 0.7,
     confidence: Math.round(confidence * 100) / 100,
     reason: confidence > 0.7 ? 'Image and text verified as authentic' : 'Image verification unsuccessful - unauthorized input risk',
     imageFingerprint
@@ -575,7 +575,7 @@ app.post('/api/register-patient', (req, res) => {
 // 3. Analyze and save (improvedMultipart handling)
 app.post('/api/analyze-and-save', upload.fields([{ name: 'audio', maxCount: 1 }, { name: 'image', maxCount: 1 }]), (req, res) => {
   let patientId = parseInt(req.body?.patient_id || req.query?.patient_id, 10) || null;
-  
+
   if (!patientId) {
     return res.status(400).json({ error: 'patient_id required', success: false });
   }
@@ -731,7 +731,7 @@ app.post('/api/analyze-and-save', upload.fields([{ name: 'audio', maxCount: 1 },
 // 4. Get all patients (with latest record)
 app.get('/api/patients', (req, res) => {
   const patients = db.patients.map(p => {
-    const records = db.triage_records.filter(r => r.patient_id === p.id).sort((a,b) => b.id - a.id);
+    const records = db.triage_records.filter(r => r.patient_id === p.id).sort((a, b) => b.id - a.id);
     const latest = records[0] || null;
     return Object.assign({}, p, {
       latest_record_id: latest ? latest.id : null,
@@ -759,7 +759,7 @@ app.get('/api/patients/:id', (req, res) => {
   const patient = db.patients.find(p => p.id === pid);
   if (!patient) return res.status(404).json({ success: false, error: 'Patient not found' });
 
-  const history = db.triage_records.filter(r => r.patient_id === pid).sort((a,b)=> b.id - a.id);
+  const history = db.triage_records.filter(r => r.patient_id === pid).sort((a, b) => b.id - a.id);
   res.json({ success: true, patient: Object.assign({}, patient, { history, total_visits: history.length }) });
 });
 
@@ -767,7 +767,7 @@ app.get('/api/patients/:id', (req, res) => {
 app.put('/api/patients/:id/status', (req, res) => {
   const pid = parseInt(req.params.id, 10);
   const { status, doctor_assigned, consultation_notes } = req.body || {};
-  const records = db.triage_records.filter(r => r.patient_id === pid).sort((a,b)=> b.id - a.id);
+  const records = db.triage_records.filter(r => r.patient_id === pid).sort((a, b) => b.id - a.id);
   if (!records.length) return res.status(404).json({ success: false, error: 'No triage record for patient' });
   const latest = records[0];
   if (status) latest.status = status;
@@ -788,7 +788,7 @@ app.get('/api/priority-queue', (req, res) => {
       latestMap.set(r.patient_id, r);
     }
   });
-  
+
   const queue = Array.from(latestMap.values())
     .sort((a, b) => (a.priority_level || 5) - (b.priority_level || 5) || new Date(b.timestamp) - new Date(a.timestamp));
 
@@ -811,10 +811,10 @@ app.get('/api/priority-queue', (req, res) => {
 app.get('/api/statistics', (req, res) => {
   const total_patients = db.patients.length;
   const total_records = db.triage_records.length;
-  const avg_score = total_records ? (db.triage_records.reduce((s,r)=> s + (r.triage_score||0),0) / total_records) : 0;
+  const avg_score = total_records ? (db.triage_records.reduce((s, r) => s + (r.triage_score || 0), 0) / total_records) : 0;
   const status_breakdown = {};
-  db.triage_records.forEach(r => { status_breakdown[r.status] = (status_breakdown[r.status]||0) + 1; });
-  res.json({ success: true, statistics: { total_patients, total_records, average_triage_score: Math.round(avg_score*100)/100, status_breakdown } });
+  db.triage_records.forEach(r => { status_breakdown[r.status] = (status_breakdown[r.status] || 0) + 1; });
+  res.json({ success: true, statistics: { total_patients, total_records, average_triage_score: Math.round(avg_score * 100) / 100, status_breakdown } });
 });
 
 const PORT = process.env.PORT || 3000;

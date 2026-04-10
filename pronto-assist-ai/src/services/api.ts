@@ -102,7 +102,7 @@ export const getAllPatients = async (): Promise<{
 }> => {
   try {
     const response = await fetch(`${API_BASE_URL}/patients`);
-    
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -121,7 +121,7 @@ export const getAllPatients = async (): Promise<{
 export const getPatientDetails = async (patientId: number) => {
   try {
     const response = await fetch(`${API_BASE_URL}/patients/${patientId}`);
-    
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -228,7 +228,7 @@ export const updatePatientStatus = async (
 export const getPriorityQueue = async () => {
   try {
     const response = await fetch(`${API_BASE_URL}/priority-queue`);
-    
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
@@ -251,7 +251,7 @@ export const getPriorityQueue = async () => {
 export const getStatistics = async () => {
   try {
     const response = await fetch(`${API_BASE_URL}/statistics`);
-    
+
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }

@@ -298,6 +298,142 @@
       "created_at": "2026-04-10T02:36:55.033Z",
       "voice_fingerprint": "VOICE_7a6c8c99",
       "image_fingerprint": "IMAGE_586fdb0f"
+    },
+    {
+      "id": 25,
+      "name": "veer",
+      "age": 11,
+      "phone": "11111111",
+      "email": "veer@veer.com",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": null,
+      "emergency_contact": "108",
+      "created_at": "2026-04-10T02:58:50.598Z",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "image_fingerprint": "IMAGE_586fdb0f"
+    },
+    {
+      "id": 26,
+      "name": "veer",
+      "age": 11,
+      "phone": "11111111",
+      "email": "veer@veer.com",
+      "gender": "Other",
+      "address": "maliya nagar",
+      "medical_history": null,
+      "emergency_contact": "108",
+      "created_at": "2026-04-10T03:00:58.649Z",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "image_fingerprint": "IMAGE_08130518"
+    },
+    {
+      "id": 27,
+      "name": "purvangika",
+      "age": 19,
+      "phone": "9352569335",
+      "email": null,
+      "gender": "Other",
+      "address": null,
+      "medical_history": null,
+      "emergency_contact": null,
+      "created_at": "2026-04-10T03:40:14.775Z",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "image_fingerprint": "IMAGE_10d10b83"
+    },
+    {
+      "id": 28,
+      "name": "rhsjj",
+      "age": 532,
+      "phone": null,
+      "email": null,
+      "gender": "Other",
+      "address": null,
+      "medical_history": null,
+      "emergency_contact": null,
+      "created_at": "2026-04-10T04:20:06.368Z",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "image_fingerprint": "IMAGE_10d10b83"
+    },
+    {
+      "id": 29,
+      "name": "abs",
+      "age": 14,
+      "phone": null,
+      "email": null,
+      "gender": "Other",
+      "address": null,
+      "medical_history": null,
+      "emergency_contact": null,
+      "created_at": "2026-04-10T05:32:31.168Z",
+      "voice_fingerprint": "VOICE_611a94fc",
+      "image_fingerprint": "IMAGE_08130518"
+    },
+    {
+      "id": 30,
+      "name": "Shivam",
+      "age": 67,
+      "phone": null,
+      "email": null,
+      "gender": "Other",
+      "address": null,
+      "medical_history": null,
+      "emergency_contact": null,
+      "created_at": "2026-04-10T06:18:48.738Z",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "image_fingerprint": "IMAGE_10d10b83"
+    },
+    {
+      "id": 31,
+      "name": "Shivam",
+      "age": 27,
+      "phone": null,
+      "email": null,
+      "gender": "Other",
+      "address": null,
+      "medical_history": null,
+      "emergency_contact": null,
+      "created_at": "2026-04-10T07:48:40.556Z",
+      "voice_fingerprint": "VOICE_7a6c8c99"
+    },
+    {
+      "id": 32,
+      "name": "Shiv",
+      "age": 27,
+      "phone": null,
+      "email": null,
+      "gender": "Male",
+      "address": null,
+      "medical_history": "Migrane",
+      "emergency_contact": null,
+      "created_at": "2026-04-10T07:53:36.260Z",
+      "image_fingerprint": "IMAGE_08130518"
+    },
+    {
+      "id": 33,
+      "name": "Shiv",
+      "age": 27,
+      "phone": null,
+      "email": null,
+      "gender": "Male",
+      "address": null,
+      "medical_history": "Migrane",
+      "emergency_contact": null,
+      "created_at": "2026-04-10T07:55:37.565Z"
+    },
+    {
+      "id": 34,
+      "name": "Shivam",
+      "age": 12,
+      "phone": null,
+      "email": null,
+      "gender": "Other",
+      "address": null,
+      "medical_history": null,
+      "emergency_contact": null,
+      "created_at": "2026-04-10T14:08:27.465Z",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "image_fingerprint": "IMAGE_10d10b83"
     }
   ],
   "triage_records": [
@@ -1439,8 +1575,945 @@
       "timestamp": "2026-04-10T02:37:15.619Z",
       "attended_at": null,
       "completed_at": null
+    },
+    {
+      "id": 25,
+      "patient_id": 25,
+      "audio_score": 1.1,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "voice_authenticity": "FLAGGED ⚠️",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": true,
+        "isSpoofed": false,
+        "confidence": 0.5,
+        "reason": "Too-perfect byte regularity (AI-generated audio signature); TTS generator watermark detected",
+        "audioLength": 124014,
+        "silenceRatio": 5,
+        "regularityScore": 59
+      },
+      "voice_security_status": {
+        "isFakeVoice": true,
+        "isSpoofed": false,
+        "confidence": 50,
+        "reason": "Too-perfect byte regularity (AI-generated audio signature); TTS generator watermark detected",
+        "verdict": "🛑 FAKE VOICE DETECTED"
+      },
+      "image_score": 1.3,
+      "image_analysis": "Image analysis: Contusion detected",
+      "image_fingerprint": "IMAGE_586fdb0f",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "watermark_detection": {
+        "hasWatermark": false,
+        "isSynthetic": false,
+        "confidence": 0,
+        "reason": "Image appears authentic",
+        "patternScore": 0.31,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "camera_authentication": {
+        "isRealCamera": false,
+        "confidence": 0.1,
+        "reason": "No EXIF metadata detected; Natural sensor noise detected",
+        "hasExifData": false,
+        "hasCameraModel": false,
+        "hasLensInfo": false,
+        "noiseLevel": 297,
+        "jpegQuality": 0
+      },
+      "image_security_status": {
+        "watermark": {
+          "hasWatermark": false,
+          "isSynthetic": false,
+          "confidence": 0,
+          "reason": "Image appears authentic",
+          "verdict": "✅ NO WATERMARK"
+        },
+        "camera": {
+          "isRealCamera": false,
+          "confidence": 10,
+          "reason": "No EXIF metadata detected; Natural sensor noise detected",
+          "hasCameraModel": false,
+          "hasExifData": false,
+          "verdict": "🛑 NOT FROM REAL CAMERA"
+        },
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Contusion",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 1,
+      "priority_label": "🔴 CRITICAL",
+      "priority_color": "red",
+      "triage_score": 1.2,
+      "recommended_specialist": "Orthopedic Specialist",
+      "ai_recommendation": "See Orthopedic Specialist - Priority Level 1",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T02:59:48.693Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 26,
+      "patient_id": 26,
+      "audio_score": 1.1,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "voice_authenticity": "VERIFIED 🔒",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 0.2,
+        "reason": "TTS generator watermark detected",
+        "audioLength": 164402,
+        "silenceRatio": 27,
+        "regularityScore": 25
+      },
+      "voice_security_status": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 20,
+        "reason": "TTS generator watermark detected",
+        "verdict": "✅ AUTHENTIC VOICE"
+      },
+      "image_score": 3.1,
+      "image_analysis": "Image analysis: Mild Abrasion detected",
+      "image_fingerprint": "IMAGE_08130518",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "watermark_detection": {
+        "hasWatermark": true,
+        "isSynthetic": true,
+        "confidence": 0.7,
+        "reason": "Suspicious filename contains watermark indicators; Unusual pixel patterns detected (watermark/AI generation signature)",
+        "patternScore": 0.66,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "camera_authentication": {
+        "isRealCamera": false,
+        "confidence": 0.1,
+        "reason": "No EXIF metadata detected; Natural sensor noise detected",
+        "hasExifData": false,
+        "hasCameraModel": false,
+        "hasLensInfo": false,
+        "noiseLevel": 279,
+        "jpegQuality": 1
+      },
+      "image_security_status": {
+        "watermark": {
+          "hasWatermark": true,
+          "isSynthetic": true,
+          "confidence": 70,
+          "reason": "Suspicious filename contains watermark indicators; Unusual pixel patterns detected (watermark/AI generation signature)",
+          "verdict": "🛑 WATERMARK/SYNTHETIC"
+        },
+        "camera": {
+          "isRealCamera": false,
+          "confidence": 10,
+          "reason": "No EXIF metadata detected; Natural sensor noise detected",
+          "hasCameraModel": false,
+          "hasExifData": false,
+          "verdict": "🛑 NOT FROM REAL CAMERA"
+        },
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Mild Abrasion",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 2,
+      "priority_label": "🟠 HIGH",
+      "priority_color": "orange",
+      "triage_score": 2.1,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 2",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T03:02:07.545Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 27,
+      "patient_id": 27,
+      "audio_score": 2.1,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "voice_authenticity": "VERIFIED 🔒",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 0.2,
+        "reason": "TTS generator watermark detected",
+        "audioLength": 164402,
+        "silenceRatio": 27,
+        "regularityScore": 25
+      },
+      "voice_security_status": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 20,
+        "reason": "TTS generator watermark detected",
+        "verdict": "✅ AUTHENTIC VOICE"
+      },
+      "image_score": 1.2,
+      "image_analysis": "Image analysis: Burn detected",
+      "image_fingerprint": "IMAGE_10d10b83",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "watermark_detection": {
+        "hasWatermark": false,
+        "isSynthetic": false,
+        "confidence": 0.3,
+        "reason": "Unusual pixel patterns detected (watermark/AI generation signature)",
+        "patternScore": 1.46,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "camera_authentication": {
+        "isRealCamera": false,
+        "confidence": 0.1,
+        "reason": "No EXIF metadata detected; Natural sensor noise detected",
+        "hasExifData": false,
+        "hasCameraModel": false,
+        "hasLensInfo": false,
+        "noiseLevel": 298,
+        "jpegQuality": 2
+      },
+      "image_security_status": {
+        "watermark": {
+          "hasWatermark": false,
+          "isSynthetic": false,
+          "confidence": 30,
+          "reason": "Unusual pixel patterns detected (watermark/AI generation signature)",
+          "verdict": "✅ NO WATERMARK"
+        },
+        "camera": {
+          "isRealCamera": false,
+          "confidence": 10,
+          "reason": "No EXIF metadata detected; Natural sensor noise detected",
+          "hasCameraModel": false,
+          "hasExifData": false,
+          "verdict": "🛑 NOT FROM REAL CAMERA"
+        },
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Burn",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 2,
+      "priority_label": "🟠 HIGH",
+      "priority_color": "orange",
+      "triage_score": 1.65,
+      "recommended_specialist": "Burn Specialist",
+      "ai_recommendation": "See Burn Specialist - Priority Level 2",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T03:46:41.912Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 28,
+      "patient_id": 28,
+      "audio_score": 1.4,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "voice_authenticity": "VERIFIED 🔒",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 0.2,
+        "reason": "TTS generator watermark detected",
+        "audioLength": 164402,
+        "silenceRatio": 27,
+        "regularityScore": 25
+      },
+      "voice_security_status": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 20,
+        "reason": "TTS generator watermark detected",
+        "verdict": "✅ AUTHENTIC VOICE"
+      },
+      "image_score": 4.6,
+      "image_analysis": "Image analysis: Sprain detected",
+      "image_fingerprint": "IMAGE_10d10b83",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "watermark_detection": {
+        "hasWatermark": false,
+        "isSynthetic": false,
+        "confidence": 0.3,
+        "reason": "Unusual pixel patterns detected (watermark/AI generation signature)",
+        "patternScore": 1.46,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "camera_authentication": {
+        "isRealCamera": false,
+        "confidence": 0.1,
+        "reason": "No EXIF metadata detected; Natural sensor noise detected",
+        "hasExifData": false,
+        "hasCameraModel": false,
+        "hasLensInfo": false,
+        "noiseLevel": 298,
+        "jpegQuality": 2
+      },
+      "image_security_status": {
+        "watermark": {
+          "hasWatermark": false,
+          "isSynthetic": false,
+          "confidence": 30,
+          "reason": "Unusual pixel patterns detected (watermark/AI generation signature)",
+          "verdict": "✅ NO WATERMARK"
+        },
+        "camera": {
+          "isRealCamera": false,
+          "confidence": 10,
+          "reason": "No EXIF metadata detected; Natural sensor noise detected",
+          "hasCameraModel": false,
+          "hasExifData": false,
+          "verdict": "🛑 NOT FROM REAL CAMERA"
+        },
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Sprain",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 3,
+      "priority_label": "🟡 MEDIUM",
+      "priority_color": "yellow",
+      "triage_score": 3,
+      "recommended_specialist": "Orthopedic Specialist",
+      "ai_recommendation": "See Orthopedic Specialist - Priority Level 3",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T04:26:20.303Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 29,
+      "patient_id": 29,
+      "audio_score": 2.8,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_611a94fc",
+      "voice_authenticity": "FLAGGED ⚠️",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0.4,
+        "reason": "Text does not match expected patient description pattern"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": true,
+        "isSpoofed": false,
+        "confidence": 0.5,
+        "reason": "Too-perfect byte regularity (AI-generated audio signature); TTS generator watermark detected",
+        "audioLength": 97648,
+        "silenceRatio": 4,
+        "regularityScore": 63
+      },
+      "voice_security_status": {
+        "isFakeVoice": true,
+        "isSpoofed": false,
+        "confidence": 50,
+        "reason": "Too-perfect byte regularity (AI-generated audio signature); TTS generator watermark detected",
+        "verdict": "🛑 FAKE VOICE DETECTED"
+      },
+      "image_score": 2.8,
+      "image_analysis": "Image analysis: Laceration detected",
+      "image_fingerprint": "IMAGE_08130518",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0.4,
+        "reason": "Text does not match image injury pattern"
+      },
+      "watermark_detection": {
+        "hasWatermark": true,
+        "isSynthetic": true,
+        "confidence": 0.7,
+        "reason": "Suspicious filename contains watermark indicators; Unusual pixel patterns detected (watermark/AI generation signature)",
+        "patternScore": 0.66,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "camera_authentication": {
+        "isRealCamera": false,
+        "confidence": 0.1,
+        "reason": "No EXIF metadata detected; Natural sensor noise detected",
+        "hasExifData": false,
+        "hasCameraModel": false,
+        "hasLensInfo": false,
+        "noiseLevel": 279,
+        "jpegQuality": 1
+      },
+      "image_security_status": {
+        "watermark": {
+          "hasWatermark": true,
+          "isSynthetic": true,
+          "confidence": 70,
+          "reason": "Suspicious filename contains watermark indicators; Unusual pixel patterns detected (watermark/AI generation signature)",
+          "verdict": "🛑 WATERMARK/SYNTHETIC"
+        },
+        "camera": {
+          "isRealCamera": false,
+          "confidence": 10,
+          "reason": "No EXIF metadata detected; Natural sensor noise detected",
+          "hasCameraModel": false,
+          "hasExifData": false,
+          "verdict": "🛑 NOT FROM REAL CAMERA"
+        },
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Laceration",
+      "injury_severity": "Detected",
+      "text_analysis": "smdshgs",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0.4,
+          "reason": "Text does not match expected patient description pattern"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0.4,
+          "reason": "Text does not match image injury pattern"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": "Information verified"
+      },
+      "priority_level": 3,
+      "priority_label": "🟡 MEDIUM",
+      "priority_color": "yellow",
+      "triage_score": 2.8,
+      "recommended_specialist": "General Surgeon",
+      "ai_recommendation": "See General Surgeon - Priority Level 3",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T05:33:48.911Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 30,
+      "patient_id": 30,
+      "audio_score": 3.9,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "voice_authenticity": "VERIFIED 🔒",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 0.2,
+        "reason": "TTS generator watermark detected",
+        "audioLength": 164402,
+        "silenceRatio": 27,
+        "regularityScore": 25
+      },
+      "voice_security_status": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 20,
+        "reason": "TTS generator watermark detected",
+        "verdict": "✅ AUTHENTIC VOICE"
+      },
+      "image_score": 2.6,
+      "image_analysis": "Image analysis: Fracture detected",
+      "image_fingerprint": "IMAGE_10d10b83",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "watermark_detection": {
+        "hasWatermark": false,
+        "isSynthetic": false,
+        "confidence": 0.3,
+        "reason": "Unusual pixel patterns detected (watermark/AI generation signature)",
+        "patternScore": 1.46,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "camera_authentication": {
+        "isRealCamera": false,
+        "confidence": 0.1,
+        "reason": "No EXIF metadata detected; Natural sensor noise detected",
+        "hasExifData": false,
+        "hasCameraModel": false,
+        "hasLensInfo": false,
+        "noiseLevel": 298,
+        "jpegQuality": 2
+      },
+      "image_security_status": {
+        "watermark": {
+          "hasWatermark": false,
+          "isSynthetic": false,
+          "confidence": 30,
+          "reason": "Unusual pixel patterns detected (watermark/AI generation signature)",
+          "verdict": "✅ NO WATERMARK"
+        },
+        "camera": {
+          "isRealCamera": false,
+          "confidence": 10,
+          "reason": "No EXIF metadata detected; Natural sensor noise detected",
+          "hasCameraModel": false,
+          "hasExifData": false,
+          "verdict": "🛑 NOT FROM REAL CAMERA"
+        },
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Fracture",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 3,
+      "priority_label": "🟡 MEDIUM",
+      "priority_color": "yellow",
+      "triage_score": 3.25,
+      "recommended_specialist": "Orthopedic Specialist",
+      "ai_recommendation": "See Orthopedic Specialist - Priority Level 3",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T06:19:43.486Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 31,
+      "patient_id": 31,
+      "audio_score": 3.7,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7a6c8c99",
+      "voice_authenticity": "VERIFIED 🔒",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 0.2,
+        "reason": "TTS generator watermark detected",
+        "audioLength": 164402,
+        "silenceRatio": 27,
+        "regularityScore": 25
+      },
+      "voice_security_status": {
+        "isFakeVoice": false,
+        "isSpoofed": false,
+        "confidence": 20,
+        "reason": "TTS generator watermark detected",
+        "verdict": "✅ AUTHENTIC VOICE"
+      },
+      "image_score": 5,
+      "image_analysis": "N/A",
+      "image_fingerprint": null,
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No image data to verify"
+      },
+      "watermark_detection": null,
+      "camera_authentication": null,
+      "image_security_status": {
+        "watermark": null,
+        "camera": null,
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Unknown",
+      "injury_severity": "Unknown",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "No image data to verify"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 5,
+      "priority_label": "🔵 MINIMAL",
+      "priority_color": "blue",
+      "triage_score": 4.35,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 5",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T07:49:25.753Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 32,
+      "patient_id": 32,
+      "audio_score": 5,
+      "audio_transcript": "N/A",
+      "audio_severity": "Normal",
+      "voice_fingerprint": null,
+      "voice_authenticity": "FLAGGED ⚠️",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "No voice data to verify"
+      },
+      "voice_spoofing_detection": null,
+      "voice_security_status": null,
+      "image_score": 3.8,
+      "image_analysis": "Image analysis: No Visible Injury detected",
+      "image_fingerprint": "IMAGE_08130518",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "watermark_detection": {
+        "hasWatermark": true,
+        "isSynthetic": true,
+        "confidence": 0.7,
+        "reason": "Suspicious filename contains watermark indicators; Unusual pixel patterns detected (watermark/AI generation signature)",
+        "patternScore": 0.66,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "camera_authentication": {
+        "isRealCamera": false,
+        "confidence": 0.1,
+        "reason": "No EXIF metadata detected; Natural sensor noise detected",
+        "hasExifData": false,
+        "hasCameraModel": false,
+        "hasLensInfo": false,
+        "noiseLevel": 279,
+        "jpegQuality": 1
+      },
+      "image_security_status": {
+        "watermark": {
+          "hasWatermark": true,
+          "isSynthetic": true,
+          "confidence": 70,
+          "reason": "Suspicious filename contains watermark indicators; Unusual pixel patterns detected (watermark/AI generation signature)",
+          "verdict": "🛑 WATERMARK/SYNTHETIC"
+        },
+        "camera": {
+          "isRealCamera": false,
+          "confidence": 10,
+          "reason": "No EXIF metadata detected; Natural sensor noise detected",
+          "hasCameraModel": false,
+          "hasExifData": false,
+          "verdict": "🛑 NOT FROM REAL CAMERA"
+        },
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "No Visible Injury",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "No voice data to verify"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 5,
+      "priority_label": "🔵 MINIMAL",
+      "priority_color": "blue",
+      "triage_score": 4.4,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 5",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T07:53:52.389Z",
+      "attended_at": null,
+      "completed_at": null
+    },
+    {
+      "id": 33,
+      "patient_id": 34,
+      "audio_score": 4.1,
+      "audio_transcript": "Audio analyzed - Symptoms detected",
+      "audio_severity": "Moderate",
+      "voice_fingerprint": "VOICE_7b6ccb70",
+      "voice_authenticity": "FLAGGED ⚠️",
+      "voice_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "voice_spoofing_detection": {
+        "isFakeVoice": true,
+        "isSpoofed": false,
+        "confidence": 0.5,
+        "reason": "Too-perfect byte regularity (AI-generated audio signature); TTS generator watermark detected",
+        "audioLength": 124014,
+        "silenceRatio": 5,
+        "regularityScore": 59
+      },
+      "voice_security_status": {
+        "isFakeVoice": true,
+        "isSpoofed": false,
+        "confidence": 50,
+        "reason": "Too-perfect byte regularity (AI-generated audio signature); TTS generator watermark detected",
+        "verdict": "🛑 FAKE VOICE DETECTED"
+      },
+      "image_score": 4,
+      "image_analysis": "Image analysis: Dislocation detected",
+      "image_fingerprint": "IMAGE_10d10b83",
+      "image_authenticity": "FLAGGED ⚠️",
+      "image_verification": {
+        "verified": false,
+        "confidence": 0,
+        "reason": "Empty text - unauthorized input suspected"
+      },
+      "watermark_detection": {
+        "hasWatermark": false,
+        "isSynthetic": false,
+        "confidence": 0.3,
+        "reason": "Unusual pixel patterns detected (watermark/AI generation signature)",
+        "patternScore": 1.46,
+        "metadataFound": true,
+        "validFormat": true
+      },
+      "camera_authentication": {
+        "isRealCamera": false,
+        "confidence": 0.1,
+        "reason": "No EXIF metadata detected; Natural sensor noise detected",
+        "hasExifData": false,
+        "hasCameraModel": false,
+        "hasLensInfo": false,
+        "noiseLevel": 298,
+        "jpegQuality": 2
+      },
+      "image_security_status": {
+        "watermark": {
+          "hasWatermark": false,
+          "isSynthetic": false,
+          "confidence": 30,
+          "reason": "Unusual pixel patterns detected (watermark/AI generation signature)",
+          "verdict": "✅ NO WATERMARK"
+        },
+        "camera": {
+          "isRealCamera": false,
+          "confidence": 10,
+          "reason": "No EXIF metadata detected; Natural sensor noise detected",
+          "hasCameraModel": false,
+          "hasExifData": false,
+          "verdict": "🛑 NOT FROM REAL CAMERA"
+        },
+        "finalVerdict": "🛑 FRAUD DETECTED"
+      },
+      "injury_category": "Dislocation",
+      "injury_severity": "Detected",
+      "text_analysis": "N/A",
+      "text_authenticity": "⚠️ UNVERIFIED",
+      "text_verification": {
+        "voice": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        },
+        "image": {
+          "verified": false,
+          "confidence": 0,
+          "reason": "Empty text - unauthorized input suspected"
+        }
+      },
+      "fraud_detection": {
+        "isFraud": false,
+        "confidence": 0,
+        "reason": ""
+      },
+      "priority_level": 5,
+      "priority_label": "🔵 MINIMAL",
+      "priority_color": "blue",
+      "triage_score": 4.05,
+      "recommended_specialist": "General Practitioner",
+      "ai_recommendation": "See General Practitioner - Priority Level 5",
+      "status": "Pending",
+      "doctor_assigned": null,
+      "consultation_notes": null,
+      "timestamp": "2026-04-10T14:10:33.669Z",
+      "attended_at": null,
+      "completed_at": null
     }
   ],
-  "nextPatientId": 25,
-  "nextRecordId": 25
+  "nextPatientId": 35,
+  "nextRecordId": 34
 }

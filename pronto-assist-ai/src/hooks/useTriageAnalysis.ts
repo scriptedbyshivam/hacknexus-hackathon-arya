@@ -43,7 +43,7 @@ export const useTriageAnalysis = () => {
     setState(prev => ({ ...prev, loading: true, error: null }));
     try {
       const response = await registerPatient(patientData);
-      
+
       if (response.success) {
         setState(prev => ({
           ...prev,
