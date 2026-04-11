@@ -196,7 +196,7 @@ POST /analyze
 #### Step 2: AI Processing
 <li>Backend analyzes both inputs</li>
 <li>Multimodal model generates insights</li>
-<li></li>
+
 
 #### Step 3: View Results
 <li>Triage Score (1–5)</li>
@@ -257,7 +257,7 @@ Frontend Dashboard (Priority View)
 <li>Combines NLP + Computer Vision</li>
 <li>Real-world emergency healthcare use case</li>
 <li>Multimodal AI decision-making</li>
-<li></li>
+
 
 ---
 ## ❤️ Impact
